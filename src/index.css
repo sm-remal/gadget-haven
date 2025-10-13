@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui" {
+   themes: light --default, dark --prefersdark;
+}
+
+
+body{
+  font-family: "Sora", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a.active {
+    background-color: #9538E2;
+    color: white;
+}
