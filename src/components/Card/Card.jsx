@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const Card = ({ gadgets }) => {
-    console.log(gadgets)
-    const { product_image, price, product_title } = gadgets
+    // console.log(gadgets)
+    const {product_id, product_image, price, product_title } = gadgets
     return (
-        <div className="card bg-base-100 overflow-hidden rounded-md shadow-lg relative group border-2 border-gray-200">
+        <div className="card bg-base-100 overflow-hidden rounded-md shadow-sm relative group border-1 border-gray-100">
             <figure>
                 <img
                     src={product_image}
@@ -18,7 +18,7 @@ const Card = ({ gadgets }) => {
                     <div className="badge bg-[#9538E2] text-white">NEW</div>
                 </h2>
                 <p>Price: <span>{price}</span> TK</p>
-                <Link><button className='btn rounded-full border-2 border-[#9538E2] text-[#9538E2]'>View Details</button></Link>
+                <Link to={`/product-details/${product_id}`}><button className='btn rounded-full border-2 border-[#9538E2] text-[#9538E2]'>View Details</button></Link>
             </div>
         </div>
     );
