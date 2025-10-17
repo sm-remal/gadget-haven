@@ -5,6 +5,8 @@ import Statistics from "../pages/Statistics/Statistics";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Loader from "../components/Loader/Loader";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import CartDashboard from "../pages/CartDashboard/CartDashboard";
+import WishList from "../pages/WishList/WishList";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ export const router = createBrowserRouter([
         {
             path: "dashboard",
             Component: Dashboard,
+        },
+        {
+            path: "cart",
+            Component: CartDashboard,
+        },
+        {
+            path: "wishlist",
+            Component: WishList,
         }
     ]
   },

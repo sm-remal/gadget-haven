@@ -4,7 +4,8 @@ import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className='bg-base-100 shadow-sm'>
+        <div className="navbar content-layout">
             <div className="navbar-start">
                 <div className="dropdown -ml-2">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,6 +33,7 @@ const Navbar = () => {
                 <Link className=""><ShoppingCart /></Link>
                 <Link className=""><Heart /></Link>
             </div>
+        </div>
         </div>
     );
 };

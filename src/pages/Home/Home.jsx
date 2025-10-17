@@ -16,7 +16,7 @@ const Home = () => {
     const categories = ["All Product", "Laptop", "Phones", "Accessories", "Smart Watches", "MacBook", "IPhone"];
 
     return (
-        <div className='bg-gray-100'>
+        <div className='bg-gray-100 content-layout'>
             <Banner />
 
             <section className='pb-8 md:pb-14 px-4'>
